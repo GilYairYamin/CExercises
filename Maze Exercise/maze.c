@@ -12,14 +12,6 @@ void printMaze(char maze[ROWS][COLS]) {
     }
 }
 
-void printArr(int* arr, int len) {
-    for (int i = 0; i < len; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-
-
 int findPath(char maze[ROWS][COLS]) {
     Stack* moveStack = newStack();
     Stack* reverseStack = newStack();

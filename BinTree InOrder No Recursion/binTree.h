@@ -7,8 +7,8 @@ typedef struct treeNodeStack TreeNodeStack;
 
 struct treeNode {
     int val;
-    struct TreeNode* left;
-    struct TreeNode* right;
+    TreeNode* left;
+    TreeNode* right;
 };
 
 struct treeNodeStackNode {
@@ -24,8 +24,8 @@ int* inorderTraversal(TreeNode* A, int* len1);
 TreeNode* newTreeNode(int);
 TreeNode* generateTree();
 
-TreeNodeStackNode* newStackNode(TreeNode*, TreeNodeStackNode*);
 TreeNodeStack* newTreeNodeStack();
+TreeNodeStackNode* newStackNode(TreeNode*, TreeNodeStackNode*);
 void push(TreeNodeStack*, TreeNode*);
 TreeNode* pop(TreeNodeStack*);
 int isEmpty(TreeNodeStack*);

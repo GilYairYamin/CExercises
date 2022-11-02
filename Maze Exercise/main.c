@@ -13,7 +13,7 @@ int main() {
     int res = findPath(maze);
     printMaze(maze);
     if (res)
-        printf("Yes");
+        printf("True");
     else
-        printf("no");
+        printf("False");
 }

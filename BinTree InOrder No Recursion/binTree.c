@@ -34,8 +34,7 @@ int* inorderTraversal(TreeNode* A, int* len1) {
     int* resArr = (int*)malloc(0);
 
     TreeNode* temp = A;
-    TreeNodeStackNode* stack = NULL;
-    TreeNodeStackNode* tempNode = NULL;
+    TreeNodeStack* stack = newTreeNodeStack();
 
     int counter = 0;
     int index = 0;
@@ -58,6 +57,8 @@ int* inorderTraversal(TreeNode* A, int* len1) {
         }
         temp = temp->right;
     }
+    *len1 = arrLen;
+
     return resArr;
 }
 
