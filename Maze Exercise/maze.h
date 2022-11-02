@@ -7,7 +7,7 @@
 #define COLS 5
 
 #define DIR_LEN 4
-#define DIR_TYPE 2
+#define DIR_TYPE_LEN 2
 
 int findPath(char[ROWS][COLS]);
 void printMaze(char[ROWS][COLS]);
